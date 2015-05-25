@@ -1,0 +1,6 @@
+data/textures/Best/GrassTexture.png loaded Succefelly.
+data/textures/Best/RockTextureBW.jpg loaded Succefelly.
+data/textures/Best/snow.bmp loaded Succefelly.
+data/heightmaps/favorites/bave/heightmap.bmp loaded Succefelly.
+Destruction clip.
+Destruction clip.

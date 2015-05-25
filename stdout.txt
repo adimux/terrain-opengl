@@ -1,0 +1,28 @@
+Position Light : 0.0223551 -0.894204 0.447102
+Direction light : -0.0335326 1.34131 0.447102
+Folel : 10 0 3
+5.49316
+... 0
+175
+Temps : 5498
+FPS : 11
+FPS : 1000
+Error in events of key.
+FPS : 333
+FPS : 500
+FPS : 333
+FPS : 500
+FPS : 1000
+FPS : 333
+FPS : 333
+FPS : 500
+FPS : 500
+FPS : 500
+FPS : 500
+FPS : 500
+FPS : 500
+FPS : 500
+FPS : 500
+FPS : 500
+FPS : 500
+FPS : 500

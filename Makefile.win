@@ -1,0 +1,48 @@
+# Project: 3D-1
+# Makefile created by Dev-C++ 4.9.9.2
+
+CPP  = g++.exe
+CC   = gcc.exe
+WINDRES = windres.exe
+RES  = 
+OBJ  = main.o sdlglutils.o Camera.o Utils.o Terrain.o Clip.o Light.o $(RES)
+LINKOBJ  = main.o sdlglutils.o Camera.o Utils.o Terrain.o Clip.o Light.o $(RES)
+LIBS =  -L"D:/Dev-Cpp/lib" -mwindows -lmingw32 -lSDLmain -lSDL -lglu32 -lopengl32 SDL_image.lib  
+INCS =  -I"D:/Dev-Cpp/include" 
+CXXINCS =  -I"D:/Dev-Cpp/lib/gcc/mingw32/3.4.2/include"  -I"D:/Dev-Cpp/include/c++/3.4.2/backward"  -I"D:/Dev-Cpp/include/c++/3.4.2/mingw32"  -I"D:/Dev-Cpp/include/c++/3.4.2"  -I"D:/Dev-Cpp/include" 
+BIN  = 3D-1.exe
+CXXFLAGS = $(CXXINCS) -g  
+CFLAGS = $(INCS) -DGLUT_STATIC  
+RM = rm -f
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before 3D-1.exe all-after
+
+
+clean: clean-custom
+	${RM} $(OBJ) $(BIN)
+
+$(BIN): $(OBJ)
+	$(CPP) $(LINKOBJ) -o "3D-1.exe" $(LIBS)
+
+main.o: main.cpp
+	$(CPP) -c main.cpp -o main.o $(CXXFLAGS)
+
+sdlglutils.o: sdlglutils.cpp
+	$(CPP) -c sdlglutils.cpp -o sdlglutils.o $(CXXFLAGS)
+
+Camera.o: Camera.cpp
+	$(CPP) -c Camera.cpp -o Camera.o $(CXXFLAGS)
+
+Utils.o: Utils.cpp
+	$(CPP) -c Utils.cpp -o Utils.o $(CXXFLAGS)
+
+Terrain.o: Terrain.cpp
+	$(CPP) -c Terrain.cpp -o Terrain.o $(CXXFLAGS)
+
+Clip.o: Clip.cpp
+	$(CPP) -c Clip.cpp -o Clip.o $(CXXFLAGS)
+
+Light.o: Light.cpp
+	$(CPP) -c Light.cpp -o Light.o $(CXXFLAGS)
